@@ -2,7 +2,7 @@
 ## 学习angular5 HTTP还没做
 ### 遇到的问题
  1. ng serve运行不起来。（删除node_modules文件夹，再npm install，用cnpm很有可能会有好多包装不上）
- 2. rxjs版本用的5.5.8，跟官网教程里的可能对不上。教程里讲服务那块时，在src/app/hero.service.ts文件中import { Observable, of } from 'rxjs'; 我在运行时显示没有of模块。后来在rxjs的git官网看了，不用import of，调用时直接Observable.of（rxjs还有待学习）
+ 2. rxjs版本用的5.5.8，跟官网教程里的可能对不上。教程里讲服务那块时，在src/app/hero.service.ts文件中import { Observable, of } from 'rxjs'; 我在运行时显示没有of模块。后来在rxjs的git官网看了，不用import {of}，调用时直接使用 Observable.of，也就是只用import {Observable}就好了
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
